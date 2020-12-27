@@ -22,8 +22,8 @@
           <label>Sort Task By:</label>
         </div>
         <div class="col-md-9">
-          <button type="button" class="btn btn-secondary" [disabled]="!Tasks" (click)="sortTask('Start_Date')">Start Date</button> &nbsp;
-          <button type="button" class="btn btn-secondary" [disabled]="!Tasks" (click)="sortTask('End_Date')">End Date</button>&nbsp;
+          <!--<button type="button" class="btn btn-secondary" [disabled]="!Tasks" (click)="sortTask('Start_Date')">Start Date</button> &nbsp;
+          <button type="button" class="btn btn-secondary" [disabled]="!Tasks" (click)="sortTask('End_Date')">End Date</button>&nbsp; -->
           <button type="button" class="btn btn-secondary" [disabled]="!Tasks" (click)="sortTask('Priority')">Priority</button>&nbsp;
           <button type="button" class="btn btn-secondary" [disabled]="!Tasks" (click)="sortTask('Status')">Completed</button>&nbsp;
         </div>
@@ -40,8 +40,8 @@
       <td style="width: 25%">Task</td>
       <td style="width: 25%">Parent</td>
       <td style="width: 5%">Priority</td>
-      <td style="width: 10%">Start</td>
-      <td style="width: 10%">End</td>
+     <!-- <td style="width: 10%">Start</td>
+      <td style="width: 10%">End</td> -->
       <td style="width: 25%"></td>
     </thead>
     <tbody>
@@ -54,8 +54,8 @@
           <label *ngIf="task.Parent">{{task.Parent.Parent_Task}}</label>
         </td>
         <td>{{task.Priority}}</td>
-        <td>{{task.Start_Date | date:'dd-MM-yyyy'}}</td>
-        <td>{{task.End_Date | date:'dd-MM-yyyy'}}</td>
+       <!-- <td>{{task.Start_Date | date:'dd-MM-yyyy'}}</td>
+        <td>{{task.End_Date | date:'dd-MM-yyyy'}}</td> -->
         <td *ngIf="task.Status==0">
           <button type="button" class="btn btn-secondary" (click)="editTask(task.Task_ID)">Edit</button>&nbsp;
           <button type="button" class="btn btn-secondary" (click)="endTask(task.Task_ID)">End Task</button>

@@ -15,21 +15,28 @@ export class DateCompareValidatorDirective implements Validator {
 
     validate(control: AbstractControl): { [key: string]: any } | null {
 
-        var source =moment(control.value).add(-1, 'months').toDate();
-        var target = moment(this.compareDate).add(-1, 'months').toDate();
+        //var source =moment(control.value).add(-1, 'months').toDate();
+        //var target = moment(this.compareDate).add(-1, 'months').toDate();
+        var source = moment('2020-12-16');
+        var target = moment('2020-12-17');
      
+        console.log('this.compareDat',this.compareDate);
+        console.log('this.operation',this.operation);
+        
+        console.log(source)
+        console.log(target)
         
         console.log(control.value);
         console.log(this.compareDate);
 
         if(this.operation=='less than'){
             if (target < source) {
-                return {
-                    dateCompare: {
-                        valid: false
-                    }
-                }
-            }
+              return {
+                     dateCompare: {
+                         valid: false
+                     }
+                 }
+             }
         }
         else
         {

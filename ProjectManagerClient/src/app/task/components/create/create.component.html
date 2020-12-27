@@ -53,7 +53,7 @@
         </button>
       </div>
     </div>
-    <div class="form-group row">
+    <!-- <div class="form-group row">
       <div class="col-md-2">
         <label for="startDate">Start Date:</label>
       </div>
@@ -61,19 +61,21 @@
         <input class="form-control" placeholder="Start Date" name='startDate' aria-describedby="startDate"
           ngbDatepicker #startDatePicker="ngbDatepicker" (focus)="startDatePicker.toggle()" [disabled]="isParentTask" 
           [(ngModel)]="taskStartDate"
-          [required]="!isParentTask" [dateCompare]="taskEndDate" operation="less than">
-      </div>
-      <div class="col-md-2">
+          [required]="!isParentTask"  operation="less than"> -->
+          <!-- [dateCompare]="taskEndDate"
+      </div> -->
+     <!-- <div class="col-md-2">
         <label for="endDate">End Date:</label>
       </div>
       <div class="col-md-4">
         <input class="form-control" placeholder="End Date" name='endDate' aria-describedby="endDate" ngbDatepicker
           #endDatePicker="ngbDatepicker" (focus)="endDatePicker.toggle()" [disabled]="isParentTask" 
           [(ngModel)]="taskEndDate"
-          [required]="!isParentTask" [dateCompare]="taskStartDate" operation="greater than">
+          [required]="!isParentTask"  operation="greater than">
+          [dateCompare]="taskStartDate"
 
       </div>
-    </div>
+    </div> -->
     <div class="row form-group">
       <div class="col-md-2">
         <label for="user">User:</label>

@@ -54,8 +54,10 @@ export class TaskService implements ITaskService {
 
   addTask(newTask: Task): Observable<ApiResponse<Task>> {
 
+    
     var uri = `${this.baseUri}${environment.endpoint_task_add}`;
 
+    console.log(newTask, uri, 'newTask')
     return this.http
       .post<ApiResponse<Task>>(uri, newTask);
   }

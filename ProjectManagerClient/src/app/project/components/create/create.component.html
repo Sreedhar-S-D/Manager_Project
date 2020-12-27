@@ -75,16 +75,16 @@
     <div class="col-md-10">
       <div class="row">
         <div class="col-md-2">
-            <button type="button" class="btn btn-secondary" [disabled]="Projects && Projects.length==0" (click)="sort('Start_Date')">Start Date</button>
+        <!-- <button type="button" class="btn btn-secondary" [disabled]="Projects && Projects.length==0" (click)="sort('Start_Date')">Start Date</button> -->  
         </div>
         <div class="col-md-2">
-            <button type="button" class="btn btn-secondary" [disabled]="Projects && Projects.length==0" (click)="sort('End_Date')">End Date</button>
+         <!--  <button type="button" class="btn btn-secondary" [disabled]="Projects && Projects.length==0" (click)="sort('End_Date')">End Date</button> -->
         </div>
         <div class="col-md-2">
-            <button type="button" class="btn btn-secondary" [disabled]="Projects && Projects.length==0" (click)="sort('Priority')">Priority</button>
+            <button type="button" class="btn btn-secondary" [disabled]="Projects && Projects.length==0" (click)="sort('Priority')">Priority</button> 
         </div>
         <div class="col-md-2">
-            <button type="button" class="btn btn-secondary" [disabled]="Projects && Projects.length==0" (click)="sort('CompletedTasks')">Completed</button>
+             <button type="button" class="btn btn-secondary" [disabled]="Projects && Projects.length==0" (click)="sort('CompletedTasks')">Completed</button> 
         </div>
       </div>
     </div>
@@ -111,8 +111,8 @@
                   <td>Completed: {{project.CompletedTasks}}</td>
                 </tr>
                 <tr>
-                  <td>Start Date: {{project.Start_Date | date: 'dd-MM-yyyy' }}</td>
-                  <td>End Date: {{project.End_Date | date: 'dd-MM-yyyy'}}</td>
+                  <!--<td>Start Date: {{project.Start_Date | date: 'dd-MM-yyyy' }}</td>
+                  <td>End Date: {{project.End_Date | date: 'dd-MM-yyyy'}}</td> -->
                 </tr>
               </table>
             </div>
